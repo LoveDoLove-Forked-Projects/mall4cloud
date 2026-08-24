@@ -38,6 +38,7 @@ Mall4cloud 主线已升级到 Spring Boot 4、Spring Cloud 和 Vue3，适合微�
 
 - Gitee 文档：[https://gitee.com/gz-yami/mall4cloud/tree/master/doc](https://gitee.com/gz-yami/mall4cloud/tree/master/doc)
 - 开发环境搭建视频：[https://www.bilibili.com/video/BV1TK411C7aV](https://www.bilibili.com/video/BV1TK411C7aV)
+- Agent Skill：权威副本 `.agents/skills/mall4cloud/`（Cursor / Codex）；Claude Code 使用 `.claude/skills/mall4cloud/`（同一份内容）。按现有功能点辅助启动、使用和二次开发
 
 建议先阅读文档，再结合视频搭建本地开发环境。
 

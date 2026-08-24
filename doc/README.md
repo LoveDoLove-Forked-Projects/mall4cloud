@@ -1,5 +1,7 @@
 # Mall4cloud 技术文档
 
+用 Cursor、Codex 或 Claude Code 打开本仓库时，可使用内置 Skill：`.agents/skills/mall4cloud/`（Claude Code 为 `.claude/skills/mall4cloud/`，内容相同）。它按开源版**现有功能点**辅助启动、使用和二次开发，详细说明仍以本 `doc/` 目录为准。不要套用 Mall4j 单体仓库的模块和端口。
+
 这里是 Mall4cloud 开源版的技术文档入口。按下面顺序阅读：先跑起来，再理解结构，最后做一个后台管理二开练习。
 
 ## 阅读路径
