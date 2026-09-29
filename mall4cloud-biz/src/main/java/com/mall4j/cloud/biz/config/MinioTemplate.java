@@ -56,7 +56,7 @@ public class MinioTemplate implements InitializingBean {
             String presignedObjectUrl = minioClient.getPresignedObjectUrl(GetPresignedObjectUrlArgs.builder().bucket(ossConfig.getBucket()).object(objectName).expiry(10, TimeUnit.MINUTES).method(Method.PUT).build());
             return presignedObjectUrl;
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("minio获取预签名上传地址失败, objectName={}", objectName, e);
             throw new Mall4cloudException(ResponseEnum.EXCEPTION);
         }
     }
@@ -74,7 +74,8 @@ public class MinioTemplate implements InitializingBean {
                             .build()
             );
         } catch (Exception e) {
-            logger.error("minio上传文件错误：", e);
+            logger.error("minio上传文件错误, filePath={}", filePath, e);
+            throw new Mall4cloudException(ResponseEnum.EXCEPTION);
         } finally {
             if (Objects.nonNull(input)) {
                 input.close();
